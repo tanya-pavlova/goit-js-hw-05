@@ -14,7 +14,7 @@ addItem(item) {
   
 removeItem(item) {
     const index = items.indexOf(item);
-    items.splice(index, 1);
+    items.splice(index, 0);
     }
 }
   
