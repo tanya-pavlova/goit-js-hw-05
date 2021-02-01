@@ -11,12 +11,13 @@ getItems() {
 addItem(item) {
     this.items.push(item);
 }
-  
+
 removeItem(item) {
-    const index = items.indexOf(item);
-    items.splice(index, 0);
+    if (this.items.includes(item)) {
+      return this.items.splice(this.items.indexOf(item), 1);
     }
-}
+  }
+} 
   
 const storage = new Storage([
     'Нанитоиды',
